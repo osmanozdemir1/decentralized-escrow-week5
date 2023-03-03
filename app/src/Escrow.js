@@ -1,16 +1,44 @@
+import { approve } from "./App";
+import { ethers } from "ethers";
+
 export default function Escrow({
   address,
-  arbiter,
+  arbiter1,
+  arbiter2,
   beneficiary,
-  value,
   handleApprove,
+  signer,
+  value,
 }) {
+
+  const alchemyProvider = new ethers.providers.JsonRpcProvider("https://eth-goerli.g.alchemy.com/v2/9CmmTe4-z8-gHqUe7-RrnRUacKmzYzyz")
+  
+  const handleApprove = async () => {
+    const escrow = ethers.Contract("Escrow", address, alchemyProvider);
+    escrow.on('Approved', () => {
+    document.getElementById(escrow.address).className =
+      'complete';
+    document.getElementById(escrow.address).innerText =
+      "✓ It's been approved!";
+    })
+    await approve(escrow, signer);
+  }
+  
+
   return (
     <div className="existing-contract">
       <ul className="fields">
+      <li>
+          <div> Contract Address </div>
+          <div> {address} </div>
+        </li>
         <li>
-          <div> Arbiter </div>
-          <div> {arbiter} </div>
+          <div> Arbiter 1 </div>
+          <div> {arbiter1} </div>
+        </li>
+        <li>
+          <div> Arbiter 2 </div>
+          <div> {arbiter2} </div>
         </li>
         <li>
           <div> Beneficiary </div>
@@ -18,7 +46,7 @@ export default function Escrow({
         </li>
         <li>
           <div> Value </div>
-          <div> {value} </div>
+          <div> {value} ETH </div>
         </li>
         <div
           className="button"

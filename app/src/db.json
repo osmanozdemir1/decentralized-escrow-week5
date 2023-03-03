@@ -1,0 +1,44 @@
+{
+  "escrows": [
+    {
+      "address": "0x2d1309Fde5D8c1ab2c8036c26FadfE9d933Ce9E4",
+      "arbiter1": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E",
+      "arbiter2": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "beneficiary": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "value": "1",
+      "id": 1
+    },
+    {
+      "address": "0x8e4763E76c106C699903796818AA786d687f9fA3",
+      "arbiter1": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E",
+      "arbiter2": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "beneficiary": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "value": "1",
+      "id": 2
+    },
+    {
+      "address": "0xae3F29b8782DB1132aD8D4505075830f96E584b2",
+      "arbiter1": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E",
+      "arbiter2": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "beneficiary": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "value": "1.2",
+      "id": 3
+    },
+    {
+      "address": "0x601d086ee8F66192523F6D47dA9E453daA75Bb9e",
+      "arbiter1": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E",
+      "arbiter2": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "beneficiary": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "value": "1.5",
+      "id": 4
+    },
+    {
+      "address": "0x3FCA734db5f9Cc97c0C72ef972FcF579e76FEbB1",
+      "arbiter1": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E",
+      "arbiter2": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "beneficiary": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "value": "0.001",
+      "id": 5
+    }
+  ]
+}
