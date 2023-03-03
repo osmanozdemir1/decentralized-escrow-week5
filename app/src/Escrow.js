@@ -11,7 +11,7 @@ export default function Escrow({
   value,
 }) {
 
-  const alchemyProvider = new ethers.providers.JsonRpcProvider("https://eth-goerli.g.alchemy.com/v2/9CmmTe4-z8-gHqUe7-RrnRUacKmzYzyz")
+  const alchemyProvider = new ethers.providers.JsonRpcProvider("YOUR HTTPS URL")
   
   const handleApprove = async () => {
     const escrow = ethers.Contract("Escrow", address, alchemyProvider);
